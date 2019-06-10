@@ -10,15 +10,9 @@ class PayController extends Controller
 
     public function pay(Request $request) {
 
-        $payment = new Payment();
+        $paymentFactory = new PaymentFactory();
+        $payment = $paymentFactory->initialize($request->type);
 
-        switch ($request->type) {
-            case 'credit':
-                $payment->payWithCreditCard();
-                break;
-            case 'paypal':
-                $payment->payWithPaypal();
-                break;
-        }
+        return $payment->pay();
     }
 }
