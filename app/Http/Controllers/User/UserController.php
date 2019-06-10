@@ -8,9 +8,9 @@ use App\Http\Controllers\Controller;
 
 class UserController extends Controller
 {
-    public function index(User $user) {
+    public function index(UserSqlRepository $user) {
 
-        $users = $user->where('created_at', '>', Carbon::yesterday())->get();
+        $users = $user->getAfterDate(Carbon::yesterday());
 
         return response()->json(['users' => $users]);
     }

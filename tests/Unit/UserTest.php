@@ -6,7 +6,7 @@ use Tests\TestCase;
 use Illuminate\Foundation\Testing\WithFaker;
 use Illuminate\Foundation\Testing\RefreshDatabase;
 
-class PayTest extends TestCase
+class UserTest extends TestCase
 {
     /**
      * A basic unit test example.
@@ -15,14 +15,13 @@ class PayTest extends TestCase
      */
     public function testExample()
     {
-        $this->markTestSkipped('must be revisited.');
-
         $response = $this->withHeaders([
             'Accept' => 'application/json'
         ])
-            ->json('POST', 'api/pay',[
+            ->json('POST', 'api/user',[
                 'type' => 'credit'
             ]);
 
+        dd($response);
     }
 }

@@ -7,7 +7,6 @@ use App\Http\Controllers\Controller;
 
 class PayController extends Controller
 {
-
     public function pay(Request $request) {
 
         $paymentFactory = new PaymentFactory();
