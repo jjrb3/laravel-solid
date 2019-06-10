@@ -9,7 +9,7 @@ use Illuminate\Support\Facades\Mail;
 
 class Notifications
 {
-    public function send(Subscriber $subscriber, $message) {
+    public function send(\NotificableInterface $subscriber, $message) {
         Mail::to($subscriber->getNotifyEmail())
             ->queue();
     }

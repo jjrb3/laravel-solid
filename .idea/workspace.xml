@@ -2,8 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="67308dc6-b1b2-40bb-bbe8-c50ef28ad169" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/app/Models/Subscriber.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/Http/Controllers/Notification/NotificableInterface.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/Notification/Notifications.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/Notification/Notifications.php" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -58,11 +59,32 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/Models/Subscriber.php">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="240">
               <caret line="16" column="34" selection-start-line="16" selection-start-column="34" selection-end-line="16" selection-end-column="34" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/app/Http/Controllers/Notification/Notifications.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="135">
+              <caret line="9" column="19" lean-forward="true" selection-start-line="9" selection-start-column="19" selection-end-line="9" selection-end-column="19" />
+              <folding>
+                <element signature="e#55#81#0#PHP" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/Http/Controllers/Notification/NotificableInterface.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="60">
+              <caret line="4" column="45" selection-start-line="4" selection-start-column="45" selection-end-line="4" selection-end-column="45" />
             </state>
           </provider>
         </entry>
@@ -114,6 +136,9 @@
         <option value="$PROJECT_DIR$/app/Http/Controllers/Pay/Class/PaymentFactory.php" />
         <option value="$PROJECT_DIR$/app/Http/Controllers/Pay/Classes/PaymentFactory.php" />
         <option value="$PROJECT_DIR$/app/Models/Subscriber.php" />
+        <option value="$PROJECT_DIR$/app/Http/Controllers/Notification/Notification.php" />
+        <option value="$PROJECT_DIR$/app/Http/Controllers/Notification/NotificableInterface.php" />
+        <option value="$PROJECT_DIR$/app/Http/Controllers/Notification/Notifications.php" />
       </list>
     </option>
   </component>
@@ -244,6 +269,22 @@
               <item name="laravel-solid" type="b2602c69:ProjectViewProjectNode" />
               <item name="laravel-solid" type="462c0819:PsiDirectoryNode" />
               <item name="app" type="462c0819:PsiDirectoryNode" />
+              <item name="Http" type="462c0819:PsiDirectoryNode" />
+              <item name="Controllers" type="462c0819:PsiDirectoryNode" />
+              <item name="Notification" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="laravel-solid" type="b2602c69:ProjectViewProjectNode" />
+              <item name="laravel-solid" type="462c0819:PsiDirectoryNode" />
+              <item name="app" type="462c0819:PsiDirectoryNode" />
+              <item name="Http" type="462c0819:PsiDirectoryNode" />
+              <item name="Controllers" type="462c0819:PsiDirectoryNode" />
+              <item name="Pay" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="laravel-solid" type="b2602c69:ProjectViewProjectNode" />
+              <item name="laravel-solid" type="462c0819:PsiDirectoryNode" />
+              <item name="app" type="462c0819:PsiDirectoryNode" />
               <item name="Models" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
@@ -321,7 +362,7 @@
       <workItem from="1560177160050" duration="1340000" />
       <workItem from="1560178634199" duration="11000" />
       <workItem from="1560178654060" duration="335000" />
-      <workItem from="1560179389550" duration="8446000" />
+      <workItem from="1560179389550" duration="9356000" />
     </task>
     <task id="LOCAL-00001" summary="[config]: Files base.">
       <created>1560177309855</created>
@@ -365,14 +406,22 @@
       <option name="project" value="LOCAL" />
       <updated>1560196857137</updated>
     </task>
-    <option name="localTasksCounter" value="7" />
+    <task id="LOCAL-00007" summary="[feat]: Problem Interface segregation principle (ISP).">
+      <created>1560199474655</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1560199474655</updated>
+    </task>
+    <option name="localTasksCounter" value="8" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="10470000" />
+    <option name="totallyTimeSpent" value="11380000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="0" width="1366" height="768" extended-state="0" />
+    <editor active="true" />
     <layout>
       <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.20543806" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
@@ -450,7 +499,8 @@
     <MESSAGE value="[feat]: Added a mutator." />
     <MESSAGE value="[feat]: Problem open/closed principle (OCP)." />
     <MESSAGE value="[feat]: Solution to open/closed principle (OCP)." />
-    <option name="LAST_COMMIT_MESSAGE" value="[feat]: Solution to open/closed principle (OCP)." />
+    <MESSAGE value="[feat]: Problem Interface segregation principle (ISP)." />
+    <option name="LAST_COMMIT_MESSAGE" value="[feat]: Problem Interface segregation principle (ISP)." />
   </component>
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/.gitignore">
@@ -553,16 +603,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/Http/Controllers/Pay/PayController.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="180">
-          <caret line="12" column="42" selection-start-line="12" selection-start-column="42" selection-end-line="12" selection-end-column="42" />
-          <folding>
-            <element signature="e#44#72#0#PHP" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/Http/Controllers/Auth/RegisterController.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-586">
@@ -612,6 +652,47 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="240">
           <caret line="16" column="34" selection-start-line="16" selection-start-column="34" selection-end-line="16" selection-end-column="34" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/Http/Controllers/Pay/PayController.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="180">
+          <caret line="12" column="42" selection-start-line="12" selection-start-column="42" selection-end-line="12" selection-end-column="42" />
+          <folding>
+            <element signature="e#44#72#0#PHP" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/Http/Controllers/Pay/PaymentFactory.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="90">
+          <caret line="6" column="6" selection-start-line="6" selection-start-column="6" selection-end-line="6" selection-end-column="6" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/Http/Controllers/Pay/CreditCardPayment.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="45">
+          <caret line="3" selection-start-line="3" selection-end-line="3" selection-end-column="35" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/Http/Controllers/Notification/NotificableInterface.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="60">
+          <caret line="4" column="45" selection-start-line="4" selection-start-column="45" selection-end-line="4" selection-end-column="45" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/Http/Controllers/Notification/Notifications.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="135">
+          <caret line="9" column="19" lean-forward="true" selection-start-line="9" selection-start-column="19" selection-end-line="9" selection-end-column="19" />
+          <folding>
+            <element signature="e#55#81#0#PHP" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
