@@ -6,7 +6,7 @@ use Tests\TestCase;
 use Illuminate\Foundation\Testing\WithFaker;
 use Illuminate\Foundation\Testing\RefreshDatabase;
 
-class StoreTest extends TestCase
+class PayTest extends TestCase
 {
     /**
      * A basic unit test example.
@@ -15,18 +15,13 @@ class StoreTest extends TestCase
      */
     public function testExample()
     {
-        $date = date('Ymdhis');
-
         $response = $this->withHeaders([
             'Accept' => 'application/json'
         ])
-            ->json('POST', 'api/create-user',[
-                'name'  => "Jeremy {$date}",
-                'email' => "jeremy-{$date}@mailinator.com",
-                'password' => '123'
+            ->json('POST', 'api/pay',[
+                'type' => 'credit'
             ]);
 
-        $response
-            ->assertStatus(200);
+        dd($response);
     }
 }
